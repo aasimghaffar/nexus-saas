@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280" fill="none">
+  <rect x="80" y="40" width="240" height="180" rx="16" fill="#F1F5F9" class="dark:fill-slate-800" opacity="0.6"/>
+  <circle cx="200" cy="110" r="36" fill="#E2E8F0" class="dark:fill-slate-700"/>
+  <!-- Search/Folder Icon -->
+  <path d="M190 100H210M200 90V110" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <rect x="130" y="160" width="140" height="10" rx="5" fill="#CBD5E1" class="dark:fill-slate-600"/>
+  <rect x="155" y="180" width="90" height="8" rx="4" fill="#E2E8F0" class="dark:fill-slate-700"/>
+</svg>

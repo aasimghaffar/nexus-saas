@@ -1,0 +1,24 @@
+<svg width="220" height="48" viewBox="0 0 220 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .logo-text { fill: #0F172A; }
+    .logo-badge-bg { fill: #EEF2FF; }
+    .logo-badge-text { fill: #4F46E5; }
+    @media (prefers-color-scheme: dark) {
+      .logo-text { fill: #FFFFFF; }
+      .logo-badge-bg { fill: #1E1B4B; }
+      .logo-badge-text { fill: #A5B4FC; }
+    }
+  </style>
+  <defs>
+    <linearGradient id="logo_grad_u" x1="0" y1="4" x2="40" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  <rect width="40" height="40" y="4" rx="10" fill="url(#logo_grad_u)"/>
+  <path d="M14 16L26 32M26 16L14 32" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="20" cy="24" r="3.5" fill="#C7D2FE"/>
+  <text x="52" y="32" class="logo-text" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="800" letter-spacing="-0.5">Nexus</text>
+  <rect x="132" y="16" width="46" height="18" rx="9" class="logo-badge-bg"/>
+  <text x="141" y="29" class="logo-badge-text" font-family="'Inter', sans-serif" font-size="9" font-weight="800" letter-spacing="0.5">SAAS</text>
+</svg>

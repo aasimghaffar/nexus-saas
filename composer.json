@@ -1,0 +1,79 @@
+{
+    "name": "cubixsol/nexus-saas",
+    "type": "project",
+    "description": "Nexus SaaS - Laravel Admin & Starter Kit (Laravel 11/12, Livewire 3, Tailwind CSS).",
+    "keywords": [
+        "laravel",
+        "saas",
+        "admin",
+        "starter-kit",
+        "livewire",
+        "tailwind"
+    ],
+    "license": "proprietary",
+    "require": {
+        "php": "^8.2",
+        "bacon/bacon-qr-code": "^2.0|^3.0",
+        "dompdf/dompdf": "^2.0|^3.0",
+        "laravel/cashier": "^15.4",
+        "laravel/fortify": "^1.24",
+        "laravel/framework": "^11.31|^12.0",
+        "laravel/sanctum": "^4.0",
+        "laravel/tinker": "^2.9",
+        "livewire/livewire": "^3.5",
+        "spatie/laravel-activitylog": "^4.8",
+        "spatie/laravel-permission": "^6.9"
+    },
+    "require-dev": {
+        "fakerphp/faker": "^1.23",
+        "mockery/mockery": "^1.6",
+        "nunomaduro/collision": "^8.1",
+        "phpunit/phpunit": "^10.5|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ],
+        "post-install-cmd": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@php -r \"file_put_contents('.env', preg_replace('/^APP_KEY=[\\\\r]?$/m', 'APP_KEY=base64:'.base64_encode(random_bytes(32)), file_get_contents('.env')));\""
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

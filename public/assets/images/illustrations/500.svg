@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" fill="none">
+  <defs>
+    <linearGradient id="grad500" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F43F5E"/>
+      <stop offset="100%" stop-color="#FB923C"/>
+    </linearGradient>
+  </defs>
+  <rect x="50" y="40" width="400" height="260" rx="24" fill="#FFF1F2" class="dark:fill-slate-800/60" opacity="0.7"/>
+  <circle cx="160" cy="140" r="70" fill="url(#grad500)" opacity="0.15"/>
+  <circle cx="340" cy="190" r="60" fill="url(#grad500)" opacity="0.2"/>
+  <text x="250" y="195" font-family="Plus Jakarta Sans, sans-serif" font-size="110" font-weight="900" fill="url(#grad500)" text-anchor="middle" letter-spacing="-2">500</text>
+  <!-- Disconnected wire or alert icon -->
+  <path d="M220 235L245 255L280 230" stroke="#F43F5E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
